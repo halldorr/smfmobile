@@ -27,7 +27,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 Text(
                   'SMF Mobile',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: kAccentColour,
                     fontSize: 25.0,
                     fontWeight: FontWeight.bold,
                   ),
@@ -45,7 +45,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     child: Text(
                       'Username:',
                       style: TextStyle(
-                        color: Colors.white,
+                        color: kAccentColour,
                       ),
                     ),
                   ),
@@ -75,7 +75,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     child: Text(
                       'Password:',
                       style: TextStyle(
-                        color: Colors.white,
+                        color: kAccentColour,
                       ),
                     ),
                   ),
