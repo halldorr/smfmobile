@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 const kPrimaryColour = Color(0xFFCEDBEA);
+const kAccentColour = Color(0xFFEB6812);
 const kApiKey = '';
 
 const kPageHeaderStyle = TextStyle(
