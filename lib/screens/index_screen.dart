@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../constants.dart';
 import '../components/category_header.dart';
+import '../components/category_info.dart';
 import '../components/header.dart';
 
 class IndexScreen extends StatefulWidget {
@@ -22,8 +23,32 @@ class _IndexScreenState extends State<IndexScreen> {
             children: <Widget>[
               Header(),
               CategoryHeader(category: 'Simple Machines'),
+              CategoryInfo(
+                  status:
+                      'https://static.simplemachinesweb.com/smf/default/images/on.png',
+                  title: 'News and Updates',
+                  subTitle:
+                      'Look here to find general news concerning Simple Machines.'),
+              CategoryInfo(
+                  status:
+                      'https://static.simplemachinesweb.com/smf/default/images/off.png',
+                  title: 'Organizational News and Updates',
+                  subTitle:
+                      'News and updates related specifically to the SMF org/corp.'),
               CategoryHeader(category: 'Charter Members Only'),
               CategoryHeader(category: 'SMF Community Helpers'),
+              CategoryInfo(
+                  status:
+                      'https://static.simplemachinesweb.com/smf/default/images/off.png',
+                  title: 'Support Helpers',
+                  subTitle:
+                      'Use this board to discuss support topics.'),
+              CategoryInfo(
+                  status:
+                      'https://static.simplemachinesweb.com/smf/default/images/off.png',
+                  title: 'SMF Documentation Help',
+                  subTitle:
+                      'For discussion of writing and translating SMF documentation.'),
             ],
           ),
         ),
