@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../constants.dart';
+import 'index_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   static const String id = 'login_screen';
@@ -104,7 +105,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   child: RaisedButton(
                     color: Colors.white,
                     onPressed: () {
-                      //submitLogin();
+                      Navigator.pushNamed(context, IndexScreen.id);
                     },
                     child: Text(
                       'Login',
