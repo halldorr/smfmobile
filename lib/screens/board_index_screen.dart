@@ -9,18 +9,19 @@ class BoardIndexScreen extends StatefulWidget {
 }
 
 class _BoardIndexScreenState extends State<BoardIndexScreen> {
-  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: kPrimaryColour,
-      body: Center(
-        child: Text(
-          'Board Index Screen',
-          style: TextStyle(
-            color: kAccentColour,
-            fontSize: 25.0,
-            fontWeight: FontWeight.bold,
+      body: SafeArea(
+        child: Center(
+          child: Text(
+            'Board Index Screen',
+            style: TextStyle(
+              color: kAccentColour,
+              fontSize: 25.0,
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ),
       ),
