@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../constants.dart';
+import '../components/header.dart';
 
 class IndexScreen extends StatefulWidget {
   static const String id = 'index_screen';
@@ -14,14 +15,13 @@ class _IndexScreenState extends State<IndexScreen> {
     return Scaffold(
       backgroundColor: kPrimaryColour,
       body: SafeArea(
-        child: Center(
-          child: Text(
-            'Index Screen',
-            style: TextStyle(
-              color: kAccentColour,
-              fontSize: 25.0,
-              fontWeight: FontWeight.bold,
-            ),
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            children: <Widget>[
+              Header(),
+              Text('New line here'),
+            ],
           ),
         ),
       ),
