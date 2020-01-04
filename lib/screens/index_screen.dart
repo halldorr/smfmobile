@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../constants.dart';
+import '../components/category_header.dart';
 import '../components/header.dart';
 
 class IndexScreen extends StatefulWidget {
@@ -20,7 +21,9 @@ class _IndexScreenState extends State<IndexScreen> {
           child: Column(
             children: <Widget>[
               Header(),
-              Text('New line here'),
+              CategoryHeader(category: 'Simple Machines'),
+              CategoryHeader(category: 'Charter Members Only'),
+              CategoryHeader(category: 'SMF Community Helpers'),
             ],
           ),
         ),
