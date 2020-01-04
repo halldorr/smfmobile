@@ -32,7 +32,7 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Text(
           'SMF Mobile',
           style: TextStyle(
-            color: Colors.white,
+            color: kAccentColour,
             fontSize: 25.0,
             fontWeight: FontWeight.bold,
           ),

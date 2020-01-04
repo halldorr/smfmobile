@@ -109,7 +109,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     child: Text(
                       'Login',
                       style: TextStyle(
-                        color: kPrimaryColour,
+                        color: kAccentColour,
                       ),
                     ),
                   ),
