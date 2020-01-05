@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../constants.dart';
+import '../components/bottom_nav_bar.dart';
 import '../components/category_header.dart';
 import '../components/category_info.dart';
 import '../components/header.dart';
@@ -15,6 +16,7 @@ class _IndexScreenState extends State<IndexScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: BottomNavBar(selectedIndex: 1),
       backgroundColor: kPrimaryColour,
       body: SafeArea(
         child: Padding(
